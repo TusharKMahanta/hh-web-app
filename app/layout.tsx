@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="container-xxl my-md-4 bd-layout">
+        {children}
+        </div>       
+      </body>
     </html>
   );
 }
