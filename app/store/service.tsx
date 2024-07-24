@@ -1,8 +1,8 @@
-import {createPost} from '../routing'
+import {reRoute} from '../routing'
 export default class StoreService {
     public handleLoginSubmit(): void {
         console.log('Submit button clicked!');
-        createPost('123');
+        reRoute('/store/products');
         
     }   
 }

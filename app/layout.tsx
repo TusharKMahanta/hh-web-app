@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container-xxl my-md-4 bd-layout">
+        <div className="my-md-4 bd-layout">
         {children}
         </div>       
       </body>

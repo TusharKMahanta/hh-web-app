@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
  
-export async function createPost(id: string) {
+export async function reRoute(routePath: string) {
   try {
     // Call database
   } catch (error) {
@@ -12,5 +12,5 @@ export async function createPost(id: string) {
  
   //revalidatePath('/posts') // Update cached posts
   //redirect('/post/${id}') // Navigate to the new post page
-  redirect('/store/products');
+  redirect(routePath);
 }
